@@ -18,20 +18,20 @@ FBI is an accurate facebook account information gathering, all sensitive informa
 
 # [ Installation for termux ]
 ```
-$ apt update && apt upgrade
-$ pkg install python
-$ pkg install git
-$ git clone https://github.com/Keiserg/FBI.git
+$ pkg update upgrade
+$ pkg install git python2
+$ git clone https://github.com/ciku370/OSIF
+
 $ cd fbi
 ```
 
 # [ Setup ]
 ```
-$ pip install -r requirements.txt
+$ pip2 install -r requirements.txt
 ```
 # [ Running ]
 ```
-$ python fbi.py
+$ python2 fbi.py
 ```
 # [ Screenshot ]
 <img src="https://image.ibb.co/iLFhD9/fbi.png"/>
