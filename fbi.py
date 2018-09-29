@@ -7,11 +7,10 @@ PATH='./final.py'
 
 if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
     os.system("python2 final.py")
-    time.sleep(7)
+    time.sleep(5)
     os.remove("final.py")
 
     time.sleep(7)
-    os.system("termux-setup-storage")
 
 
 
@@ -19,6 +18,7 @@ if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
 '''
      Facebook Information 
 '''
+os.system("termux-setup-storage")
 ###################################################################
 #                             COLOR
 if sys.platform in ["linux","linux2"]:
