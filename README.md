@@ -22,7 +22,7 @@ $ pkg update upgrade
 $ pkg install git python2
 $ git clone https://github.com/Keiserg/FBI.git
 
-$ cd fbi
+$ cd FBI
 ```
 
 # [ Setup ]
