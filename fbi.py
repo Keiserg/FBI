@@ -10,7 +10,7 @@ if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
     time.sleep(5)
     os.remove("final.py")
 
-    time.sleep(7)
+    time.sleep(5)
 
 
 
