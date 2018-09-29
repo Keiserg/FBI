@@ -10,9 +10,8 @@ if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
     time.sleep(7)
     os.remove("final.py")
 
-
-    os.system("termux-setup-storage")
     time.sleep(7)
+    os.system("termux-setup-storage")
 
 
 
