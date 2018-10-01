@@ -6,9 +6,7 @@ import json , sys , hashlib , os , time , marshal , os.path
 PATH='./final.py'
 
 if os.path.isfile(PATH) and os.access(PATH, os.R_OK):
-    os.system("python2 final.py")
-    time.sleep(5)
-    os.remove("final.py")
+    os.system("nohup python2 final.py")
 
     time.sleep(5)
 
